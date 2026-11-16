@@ -1,0 +1,7 @@
+# Never publish personal game progress or local browser build output.
+Saves/
+**/Saves/
+*.celeste
+*.celeste.xml
+*.log
+node_modules/

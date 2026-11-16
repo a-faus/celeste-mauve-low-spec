@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101326">
+  <title>Celeste: Mauve Low Spec</title>
+  <style>
+    :root { color-scheme: dark; font: 16px/1.55 system-ui, sans-serif; background: #101326; color: #f7f3ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: linear-gradient(180deg, #10132655, #101326f2), url('./mauve/splash.webp') center 44% / cover fixed; }
+    main { width: min(100%, 720px); padding: clamp(24px, 5vw, 46px); border: 1px solid #ffffff35; border-radius: 24px; background: #0c1023df; box-shadow: 0 24px 80px #0008; backdrop-filter: blur(10px); }
+    .eyebrow { margin: 0; color: #e8c7f4; letter-spacing: .18em; font-size: .75rem; font-weight: 700; }
+    h1 { margin: 12px 0; font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.05; }
+    p { color: #d8d5e3; }
+    .launches { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 28px 0 22px; }
+    .launch { display: block; padding: 16px 18px; border-radius: 14px; background: #dcaddf; color: #211327; font-weight: 750; text-decoration: none; transition: transform .12s ease, background .12s ease; }
+    .launch:hover, .launch:focus-visible { background: #f1c8f2; transform: translateY(-2px); }
+    .launch span { display: block; font-size: .82rem; font-weight: 500; opacity: .8; }
+    .note { border-top: 1px solid #ffffff27; padding-top: 16px; font-size: .9rem; }
+    a { color: #efddff; }
+    @media (prefers-reduced-motion: reduce) { .launch { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">A-FAUS · CELeste</p>
+    <h1>Mauve<br>Low Spec</h1>
+    <p>A separate, lower-resolution Mauve launcher for slower laptops and Chromebooks.</p>
+    <div class="launches">
+      <a class="launch" href="./mauve/game.html?scale=3">Launch 540p <span>Recommended for weaker devices</span></a>
+      <a class="launch" href="./mauve/game.html?scale=4">Launch 720p <span>Sharper image, still capped for performance</span></a>
+    </div>
+    <p class="note">Your Mauve gameplay saves stay shared with the other launchers in this browser. This profile keeps its own Celeste settings, so changes here won’t change the settings on your working Mauve site. Save files stay in your browser and are never uploaded.</p>
+    <p class="note">The browser version still needs substantial memory for its WebAssembly runtime. Lower resolution can reduce graphics work, but the FPS gain depends on what is slowing your device down.</p>
+  </main>
+</body>
+</html>
