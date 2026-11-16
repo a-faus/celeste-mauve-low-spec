@@ -1,4 +1,8 @@
-# Celeste: Mauve Low Spec
+# Celeste: Mauve Low Spec (browser edition)
+
+Play it at:
+
+**https://a-faus.github.io/celeste-mauve-low-spec/**
 
 A standalone GitHub Pages launcher for the same Mauve setup, with low-resolution options intended to reduce graphics load on slower devices.
 
