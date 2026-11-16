@@ -6,7 +6,8 @@ A standalone GitHub Pages launcher for the same Mauve setup, with low-resolution
 - `Launch 720p` uses 4× scale for a sharper image.
 - Gameplay saves use the existing shared browser save folder.
 - The Celeste settings file is private to this low-spec page, so its resolution does not change the normal Mauve launchers.
-- A rolling cap keeps the Webleste UI log buffer from growing without limit.
+- Rolling caps keep the Webleste log history and visible log panel from growing without limit.
+- Diagnostic Jiterpreter statistics are disabled in this copy; the game Jiterpreter itself remains enabled.
 
 The browser WebAssembly runtime still uses substantial memory. This page lowers rendering resolution and bounds its log history; it does not rebuild the game runtime or guarantee a particular FPS increase.
 
